@@ -1,8 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>ejbadass-test</groupId>
+  <groupId>ejbadass</groupId>
   <artifactId>ejbadass-test</artifactId>
   <version>1.0.0</version>
+  <description>Test project for the EJBadass container.</description>
+  <properties>
+    <jdk.version>1.8</jdk.version>
+    <junit.version>4.12</junit.version>
+  </properties>
+  <packaging>jar</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -10,17 +16,39 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.5.1</version>
         <configuration>
-          <source/>
-          <target/>
+		  <source>${jdk.version}</source>
+		  <target>${jdk.version}</target>
         </configuration>
       </plugin>
     </plugins>
   </build>
   <name>EJBadass Test</name>
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
   <url>https://github.com/EJBadass/ejbadass-test</url>
   <organization>
   	<name>EJBadass</name>
   	<url>https://github.com/EJBadass</url>
   </organization>
-  <description>Test project for the EJBadass container.</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.github.EJBadass</groupId>
+  		<artifactId>ejbadass-api</artifactId>
+  		<version>ejbadass-api</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.github.EJBadass</groupId>
+  		<artifactId>ejbadass-log-plugin</artifactId>
+  		<version>ejbadass-log-plugin</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.github.EJBadass</groupId>
+  		<artifactId>ejbadass-transaction-plugin</artifactId>
+  		<version>ejbadass-transaction-plugin</version>
+  	</dependency>
+  </dependencies>
 </project>

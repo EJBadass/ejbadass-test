@@ -1,10 +1,24 @@
 language: java
-
 sudo: false
-
 jdk:
- - openjdk7
- - oraclejdk8
- 
+- oraclejdk8
 script:
- - mvn clean verify
+- mvn clean verify test install
+after_success:
+- cp target/ejbadass-test* ./ejbadass-test.jar
+- cp target/maven-archiver/pom.properties .
+deploy:
+  provider: releases
+  name: ejbadass-test
+  tag_name: ejbadass-test
+  body: "Test project for the EJBadass container."
+  draft: false
+  api_key:
+    secure: j1/746LcNae5jtfcSGfrMPfkvcusOSUbO6pA9SINsvYwbzObWB1Ply2rr8dOAp2fcJSnw0bO3wnqnP2ZB6uP4DSBq9D8eRY6JUQfBdVi6syuXQexwA+iJ2CkQ9DI/Q92GLYOvi9UCbEZfqINZTWcxXuWSWnjTgdxDfPKZgKNg6JFOSuX5Yb6/s/P0vJL00i1Rs220j1NqpCoemRTvYPZb14YVGSV3Zq1INWv8zMC8TPCy7j7l8taAxqY/w2VaJR8A9QGWP582cRKOWbBdexxpRQs2XAPak6owKETnWrkWy2NxS0A/qyHrLjQCiXhP3oieJjCHx2Fy7LbFtXvP6DWT56z2c8kvd+oKVFlUf9Dcl8ERfr9thhrXcjnuxq0IuYPX5L+/no4sFL4x99hC3UG1evMhkE3fUUgKLL2RMZqYyHPp8r2mBr4Ne8tJDdEaJaRRkv2YUFSD9/rrGtpP3I/xK3T/Q3zbhv5r6nh4ry7NtVnUoamo93d974RpZ7W7fKtx+DOqXbj8FVWHL+EfnzeN6BeQD3DBsv09CYkIqwBe9KMvcFH2mxDS6enbG1OqprgaLLDAuML8OXHoV3GXVCQHebuDYSVi/1xeCtdYeZpaRzVUVdGXAc6xZCdMtzEv3dznViQskPgflFw7ImO4nnBn9PK1jyr0NaSNyYj51dJg4A=
+  file: 
+   - ejbadass-test.jar
+   - pom.properties
+  overwrite: true
+  skip_cleanup: true
+  on:
+    repo: EJBadass/ejbadass-test
