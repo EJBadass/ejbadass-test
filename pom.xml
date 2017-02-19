@@ -2,12 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ejbadass</groupId>
   <artifactId>ejbadass-test</artifactId>
-  <version>1.0.0</version>
   <description>Test project for the EJBadass container.</description>
   <properties>
     <jdk.version>1.8</jdk.version>
     <junit.version>4.12</junit.version>
+    <jar.version>1.0.0</jar.version>
   </properties>
+  <version>${jar.version}</version>
   <packaging>jar</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -18,6 +19,16 @@
         <configuration>
 		  <source>${jdk.version}</source>
 		  <target>${jdk.version}</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.7.2</version>
+        <configuration>
+          <printSummary>true</printSummary>
+          <testSourceDirectory>${project.basedir}\src</testSourceDirectory>
+          <testClassesDirectory>${project.basedir}\bin</testClassesDirectory>
         </configuration>
       </plugin>
     </plugins>
@@ -56,4 +67,13 @@
   		<version>ejbadass-transaction-plugin</version>
   	</dependency>
   </dependencies>
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <version>2.19.1</version>
+      </plugin>
+    </plugins>
+  </reporting>
 </project>

@@ -3,7 +3,7 @@ sudo: false
 jdk:
 - oraclejdk8
 script:
-- mvn clean verify test install
+- mvn clean verify site
 after_success:
 - cp target/ejbadass-test* ./ejbadass-test.jar
 - cp target/maven-archiver/pom.properties .
