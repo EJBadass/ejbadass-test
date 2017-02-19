@@ -10,9 +10,11 @@ after_success:
 deploy:
   provider: releases
   name: ejbadass-test
+  target_commitish: master
   tag_name: ejbadass-test
   body: "Test project for the EJBadass container."
   draft: false
+  prerelease: false
   api_key:
     secure: h8VCKNs7D/c+Fn0At+sAJWcEG4Yp21LArrpBi4hftEb7FzvbKLxinvx/UeWT83A+hO+nB6hj3Pxf99KjLfkQF7J5ttW8GzkwCtLX5YbmtFsQaE4Ds9xjcq4M5isUC+Uq/Y18ha1OLFILinr+cFtJlhicKAtqOCJ42+CDHHIGGsvbamGcQiLf2EptrHkv0P0hYQ7S0JVWmk3vMcOrMKiKZEilByB/HlPwpgSC8bC8EPWfcNEO6OKnTheLKw9Q+W4jj/gA3X5LSw5AvLC5Jk+s/qLj1kaHn0PnSLtMF/HxuGnIRrGFwGU8o0aUy/TLRffZebT57WFJYOEGUXhYUT1BAQb6OP1Udk/sdezEhvbVE0KbM5WHEsIG9Vo0aHqx3BOd8CLK+tRxhxdJeavL04zBRpvtmBSg3K4woGYNtEzb0MQPrEISHPq+GqUDs0ORiXsy7pXdKjD/2oARN0nT6KBPp0BXUgHYcFuehe4Fnt/r8hbEzzSetZmZb+Iq8PtkBJTT+izaXQUivSb5EY01GVe4rLLiytZ2GeDQJG1W/FZpCAGI4qbNEwfGsh9w/P0gO+eBNtkOglMqqKxwCO5kvVs9L3DTDBCMOXYhz0CQdv2j+BVZvcb17gYKFyFiNR8hhRQOTGSqqT+eHEpDgeoEHZzLbOQQvLZCRkC+ftg2tU5VCKo=
   file: 
