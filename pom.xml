@@ -6,9 +6,9 @@
   <properties>
     <jdk.version>1.8</jdk.version>
     <junit.version>4.12</junit.version>
-    <jar.version>1.0.0</jar.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <packaging>jar</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -54,17 +54,17 @@
   	<dependency>
   		<groupId>com.github.EJBadass</groupId>
   		<artifactId>ejbadass-api</artifactId>
-  		<version>1.0.1</version>
+  		<version>1.0.2</version>
   	</dependency>
   	<dependency>
   		<groupId>com.github.EJBadass</groupId>
   		<artifactId>ejbadass-log-plugin</artifactId>
-  		<version>1.0.1</version>
+  		<version>1.0.2</version>
   	</dependency>
   	<dependency>
   		<groupId>com.github.EJBadass</groupId>
   		<artifactId>ejbadass-transaction-plugin</artifactId>
-  		<version>1.0.1</version>
+  		<version>1.0.2</version>
   	</dependency>
   </dependencies>
   <reporting>
