@@ -1,6 +1,6 @@
-package fr.isima.ejb.stub.interfaces;
+package fr.isima.ejbadass.stub.interfaces;
 
-public interface IService {
+public interface IService2 {
 	public String giveMeAHand();
 	public IService2 getJokerService();
 }

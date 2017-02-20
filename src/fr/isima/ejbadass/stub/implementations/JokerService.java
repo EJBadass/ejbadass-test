@@ -1,7 +1,7 @@
-package fr.isima.ejb.stub.implementations;
+package fr.isima.ejbadass.stub.implementations;
 
-import fr.isima.ejb.annotation.Prefered;
-import fr.isima.ejb.stub.interfaces.IService2;
+import fr.isima.ejbadass.annotation.Prefered;
+import fr.isima.ejbadass.stub.interfaces.IService2;
 
 @Prefered
 public class JokerService implements IService2 {

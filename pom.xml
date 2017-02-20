@@ -8,7 +8,7 @@
     <junit.version>4.12</junit.version>
     <jar.version>1.0.0</jar.version>
   </properties>
-  <version>${jar.version}</version>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -28,7 +28,7 @@
         <configuration>
           <printSummary>true</printSummary>
           <testSourceDirectory>${project.basedir}\src</testSourceDirectory>
-          <testClassesDirectory>${project.basedir}\bin</testClassesDirectory>
+          <testClassesDirectory>${project.basedir}\target\classes</testClassesDirectory>
         </configuration>
       </plugin>
     </plugins>
@@ -54,17 +54,17 @@
   	<dependency>
   		<groupId>com.github.EJBadass</groupId>
   		<artifactId>ejbadass-api</artifactId>
-  		<version>ejbadass-api</version>
+  		<version>1.0.1</version>
   	</dependency>
   	<dependency>
   		<groupId>com.github.EJBadass</groupId>
   		<artifactId>ejbadass-log-plugin</artifactId>
-  		<version>ejbadass-log-plugin</version>
+  		<version>1.0.1</version>
   	</dependency>
   	<dependency>
   		<groupId>com.github.EJBadass</groupId>
   		<artifactId>ejbadass-transaction-plugin</artifactId>
-  		<version>ejbadass-transaction-plugin</version>
+  		<version>1.0.1</version>
   	</dependency>
   </dependencies>
   <reporting>

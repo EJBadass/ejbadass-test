@@ -1,6 +1,6 @@
-package fr.isima.ejb.stub.implementations;
+package fr.isima.ejbadass.stub.implementations;
 
-import fr.isima.ejb.stub.interfaces.IMultiService;
+import fr.isima.ejbadass.stub.interfaces.IMultiService;
 
 public class MultiServiceA implements IMultiService {
 	@Override

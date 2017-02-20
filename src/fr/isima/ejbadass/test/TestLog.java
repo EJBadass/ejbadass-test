@@ -1,14 +1,14 @@
-package fr.isima.ejb.test;
+package fr.isima.ejbadass.test;
 
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import fr.isima.ejb.annotation.Inject;
-import fr.isima.ejb.injection.BInjector;
-import fr.isima.ejb.log.ILogger;
-import fr.isima.ejb.stub.interfaces.ILogService;
+import fr.isima.ejbadass.annotation.Inject;
+import fr.isima.ejbadass.injection.BInjector;
+import fr.isima.ejbadass.log.ILogger;
+import fr.isima.ejbadass.stub.interfaces.ILogService;
 
 public class TestLog {
 	

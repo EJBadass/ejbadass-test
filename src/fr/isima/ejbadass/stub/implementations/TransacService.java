@@ -1,9 +1,9 @@
-package fr.isima.ejb.stub.implementations;
+package fr.isima.ejbadass.stub.implementations;
 
-import fr.isima.ejb.annotation.Inject;
-import fr.isima.ejb.stub.interfaces.ITransacService;
-import fr.isima.ejb.transaction.TransactionType;
-import fr.isima.ejb.transaction.Transactional;
+import fr.isima.ejbadass.annotation.Inject;
+import fr.isima.ejbadass.stub.interfaces.ITransacService;
+import fr.isima.ejbadass.transaction.TransactionType;
+import fr.isima.ejbadass.transaction.Transactional;
 
 public class TransacService implements ITransacService {
 	@Inject

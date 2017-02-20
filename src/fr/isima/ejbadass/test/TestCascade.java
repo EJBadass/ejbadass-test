@@ -1,4 +1,4 @@
-package fr.isima.ejb.test;
+package fr.isima.ejbadass.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -10,13 +10,13 @@ import java.lang.reflect.Proxy;
 import org.junit.Before;
 import org.junit.Test;
 
-import fr.isima.ejb.annotation.Inject;
-import fr.isima.ejb.injection.BInjector;
-import fr.isima.ejb.injection.BInvocationHandler;
-import fr.isima.ejb.stub.implementations.GoodService;
-import fr.isima.ejb.stub.implementations.JokerService;
-import fr.isima.ejb.stub.interfaces.IService;
-import fr.isima.ejb.stub.interfaces.IService2;
+import fr.isima.ejbadass.annotation.Inject;
+import fr.isima.ejbadass.injection.BInjector;
+import fr.isima.ejbadass.plugable.BInvocationHandler;
+import fr.isima.ejbadass.stub.implementations.GoodService;
+import fr.isima.ejbadass.stub.implementations.JokerService;
+import fr.isima.ejbadass.stub.interfaces.IService;
+import fr.isima.ejbadass.stub.interfaces.IService2;
 
 public class TestCascade {
 	
