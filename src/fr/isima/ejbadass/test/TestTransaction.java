@@ -59,7 +59,7 @@ public class TestTransaction {
 		assertTrue(Transaction.numberOfCommit==c+1);
 	}
 	
-	// begin & rollback
+	// tester service imbriqués et seconde transaction avec requires new
 	@Test
 	public void testRequiresRequiresNew() {
 		long 	b = Transaction.numberOfBegin,

@@ -11,14 +11,14 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/EJBadass"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/ejbadass-log-plugin"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/ejbadass-transaction-plugin"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/EJBadass"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ejbadass-transaction-plugin"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ejbadass-log-plugin"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
